@@ -27,6 +27,9 @@ class Test(unittest.TestCase):
     def test_6(self):
         self.assertEqual(lcm(2, 3, 4, 10, 20), 60)
 
+    def test_7(self):
+        self.assertEqual(lcm(5, 2, 8, 24, 60), 120)
+
 
 if __name__ == "__main__":
     unittest.main()
