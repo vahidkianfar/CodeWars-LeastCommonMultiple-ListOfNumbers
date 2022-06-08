@@ -1,12 +1,14 @@
-import functools
-import math
+from functools import reduce
+from math import gcd
 import unittest
 
 
+# function for calculating the Least Common Multiple (LCM) of given input
 def lcm(*args):
-    return functools.reduce(lambda a, b: a * b // math.gcd(a, b), args)
+    return reduce(lambda a, b: a * b // gcd(a, b), args)
 
 
+# Unit Test Class
 class Test(unittest.TestCase):
 
     def test_1(self):
